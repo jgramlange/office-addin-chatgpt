@@ -22,6 +22,6 @@
   </Requirements>
 
   <DefaultSettings>
-    <SourceLocation Default="https://jgramlange.github.io/office-addin-chatgpt/taskpane.html"/>
-  </DefaultSettings>
+  <SourceLocation Default="https://jgramlange.github.io/office-addin-chatgpt/taskpane.html"/>
+</DefaultSettings>
 </OfficeApp>
