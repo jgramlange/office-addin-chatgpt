@@ -1,27 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:type="TaskPaneApp">
+           xsi:type="MailApp">
   <Id>6d8a9c5b-84a6-4b2c-b645-7fdc898f1abc</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>DIS OUH</ProviderName>
-  <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName>ChatGPT Email Assistant</DisplayName>
-  <Description>Help writing better emails with ChatGPT</Description>
 
-  <IconUrl>https://yourdomain.com/assets/icon.png</IconUrl>
-  <SupportUrl>https://yourdomain.com/support</SupportUrl>
+  <ProviderName DefaultValue="DIS OUH" />
+  <DefaultLocale>en-US</DefaultLocale>
+
+  <DisplayName DefaultValue="ChatGPT Email Assistant" />
+  <Description DefaultValue="Help writing better emails with ChatGPT" />
+  <IconUrl DefaultValue="https://jgramlange.github.io/office-addin-chatgpt/assets/icon.png" />
+  <SupportUrl DefaultValue="https://jgramlange.github.io/office-addin-chatgpt/support.html" />
 
   <Hosts>
-    <Host Name="Mailbox"/>
+    <Host Name="Mailbox" />
   </Hosts>
 
   <Requirements>
-    <Sets DefaultMinVersion="1.1">
-      <Set Name="Mailbox"/>
+    <Sets>
+      <Set Name="Mailbox" MinVersion="1.1" />
     </Sets>
   </Requirements>
 
-  <DefaultSettings>
-  <SourceLocation Default="https://jgramlange.github.io/office-addin-chatgpt/taskpane.html"/>
-</DefaultSettings>
+  <FormSettings>
+    <Form xsi:type="ItemCompose">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://jgramlange.github.io/office-addin-chatgpt/taskpane.html" />
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
 </OfficeApp>
